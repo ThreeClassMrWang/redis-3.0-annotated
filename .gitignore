@@ -27,6 +27,7 @@ deps/lua/src/liblua.a
 *.dSYM
 
 .idea/
+.vscode/
 build-cmake/
 compile_commands.json
 lib/
