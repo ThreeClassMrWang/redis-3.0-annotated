@@ -6,6 +6,8 @@ project(redis-3.0-annotated-cmake VERSION 3.0)
 # Config
 set(DEPS_MAKE_THREADS 4)
 
+option(ENABLE_TEST "Build unit tests" OFF)
+
 #######################################################
 # Common config
 

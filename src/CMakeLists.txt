@@ -95,3 +95,7 @@ set(REDIS_CHECK_AOF_SRCS redis-check-aof.c fmacros.h config.h)
 add_executable(${REDIS_CHECK_AOF} ${REDIS_CHECK_AOF_SRCS})
 target_link_libraries(${REDIS_CHECK_AOF} ${LINK_LIBRARIES_COMMON})
 install(TARGETS ${REDIS_CHECK_AOF} DESTINATION ${INSTALL_BINARY_DIR})
+
+if(ENABLE_TEST)
+    add_subdirectory(unit)
+endif()
