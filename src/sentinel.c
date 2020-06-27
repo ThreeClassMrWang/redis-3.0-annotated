@@ -29,8 +29,8 @@
  */
 
 #include "redis.h"
-#include "hiredis.h"
-#include "async.h"
+#include "hiredis/hiredis.h"
+#include "hiredis/async.h"
 
 #include <ctype.h>
 #include <arpa/inet.h>

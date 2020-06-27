@@ -1,0 +1,6 @@
+*.o
+*.a
+*.so
+*.so.*
+Makefile.linux
+pre_build.sh

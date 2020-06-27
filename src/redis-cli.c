@@ -44,10 +44,10 @@
 #include <fcntl.h>
 #include <limits.h>
 
-#include "hiredis.h"
+#include "hiredis/hiredis.h"
 #include "sds.h"
 #include "zmalloc.h"
-#include "linenoise.h"
+#include "linenoise/linenoise.h"
 #include "help.h"
 #include "anet.h"
 #include "ae.h"

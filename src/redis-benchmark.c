@@ -41,7 +41,7 @@
 #include <assert.h>
 
 #include "ae.h"
-#include "hiredis.h"
+#include "hiredis/hiredis.h"
 #include "sds.h"
 #include "adlist.h"
 #include "zmalloc.h"

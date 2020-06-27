@@ -30,6 +30,10 @@
 
 
 #include <sys/epoll.h>
+#include <unistd.h>
+
+#include "ae.h"
+#include "zmalloc.h"
 
 /*
  * 事件状态
