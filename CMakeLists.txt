@@ -72,6 +72,19 @@ endif ()
 message(STATUS "LUA_INCLUDE_DIRS= ${LUA_INCLUDE_DIRS}")
 message(STATUS "LUA_LIBRARIES = ${LUA_LIBRARIES}")
 
+# Cmocka
+set(CMOCKA_ROOT ${LIB_ROOT}/cmocka)
+file(MAKE_DIRECTORY ${CMOCKA_ROOT})
+
+find_package(CMOCKA)
+if(NOT CMOCKA_FOUND)
+    include(${BUILD_CMAKE_SCRIPTS_ROOT}/cmocka.cmake)
+    find_package(CMOCKA)
+endif ()
+
+message(STATUS "CMOCKA_INCLUDE_DIRS = ${CMOCKA_INCLUDE_DIRS}")
+message(STATUS "CMOCKA_LIBRARIES = ${CMOCKA_LIBRARIES}")
+
 ###############################################################################
 # Add redis subdirectory
 add_subdirectory(src)
