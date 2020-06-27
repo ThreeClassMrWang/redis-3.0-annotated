@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
 
 set(CMAKE_C_STANDARD 99)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic -Wall")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pedantic -Wall -Wno-cpp -Wno-expansion-to-defined -Wno-comment")
 add_link_options(-rdynamic)
 
 set(INSTALL_BINARY_DIR bin)
