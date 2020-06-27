@@ -31,3 +31,4 @@ deps/lua/src/liblua.a
 build-cmake/
 compile_commands.json
 lib/
+*.code-workspace
